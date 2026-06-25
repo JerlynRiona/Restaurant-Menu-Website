@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delicious Bites Cafe</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<div id="cart-sidebar" class="cart-sidebar">
+    <div class="cart-header">
+        <h2>Your Cart</h2>
+        <button id="close-cart">✖</button>
+    </div>
+    <div id="cart-items"></div>
+    <div class="cart-total">
+        <h3>Total: ₹<span id="total-price">0</span></h3>
+    </div>
+</div>
+
+<body>
+
+<header>
+    <h1>🍽 Delicious Bites</h1>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#menu">Menu</a>
+        <a href="#footer">Contact</a>
+    </nav>
+
+    <div class="cart-section">
+        <button id="cart-btn">
+            🛒 Cart (<span id="cart-count">0</span>)
+        </button>
+    </div>
+</header>
+
+<section class="hero">
+    <h2>Fresh Food, Great Taste</h2>
+    <p>Experience delicious meals crafted with love.</p>
+    <a href="#menu" class="btn">Explore Menu</a>
+</section>
+
+<section id="menu">
+
+    <h2 class="menu-title">Our Menu</h2>
+
+    <div class="menu-nav">
+        <a href="#starters">Starters</a>
+        <a href="#mains">Main Course</a>
+        <a href="#desserts">Desserts</a>
+        <a href="#drinks">Drinks</a>
+    </div>
+    <!-- STARTERS -->
+    <section id="starters">
+        <h2 class="section-title">Starters</h2>
+        <div class="menu-container">
+            <div class="card" data-category="starters">
+                <img src="D:\Project\Restaurant Menu Website\Images\garlic bread.jpeg" alt="Garlic Bread">
+                <h3>Garlic Bread</h3>
+                <p>Crispy bread with garlic butter</p>
+                <span>₹120</span>
+                <button
+                    class="add-cart"
+                    data-name="Garlic Bread"
+                    data-price="120">
+                    Add to Cart
+                </button>
+            </div>
+
+            <div class="card" data-category="starters">
+                <img src="D:\Project\Restaurant Menu Website\Images\french fries.jpg" alt="French Fries">
+                <h3>French Fries</h3>
+                <p>Golden crispy fries</p>
+                <span>₹100</span>
+                <button
+                    class="add-cart"
+                    data-name="French Fries"
+                    data-price="100">
+                    Add to Cart
+                </button>
+            </div>
+
+            <div class="card" data-category="starters">
+                <img src="D:\Project\Restaurant Menu Website\Images\spring roll.jpeg" alt="Spring Rolls">
+                <h3>Spring Rolls</h3>
+                <p>Vegetable stuffed rolls</p>
+                <span>₹140</span>
+                <button class="add-cart"
+                    data-name="Spring Rolls"
+                    data-price="140">
+                    Add to Cart
+                </button>
+            </div>
+
+            <div class="card" data-category="starters">
+                <img src="D:\Project\Restaurant Menu Website\Images\nachos.jpg" alt="Nachos">
+                <h3>Nachos</h3>
+                <p>Cheesy loaded nachos</p>
+                <span>₹180</span>
+                <button class="add-cart"        
+                    data-name="Nachos"
+                    data-price="180">
+                    Add to Cart
+                </button>
+            </div>
+
+            <div class="card" data-category="starters">
+                <img src="D:\Project\Restaurant Menu Website\Images\paneer tikka.jpg" alt="Paneer Tikka">
+                <h3>Paneer Tikka</h3>
+                <p>Spiced grilled paneer</p>
+                <span>₹220</span>
+                <button class="add-cart"
+                    data-name="Paneer Tikka"
+                    data-price="220">
+                    Add to Cart
+                </button>
+            </div>
+
+            <div class="card" data-category="starters">
+                <img src="D:\Project\Restaurant Menu Website\Images\chicken wings.jpg" alt="Chicken Wings">
+                <h3>Chicken Wings</h3>
+                <p>Hot and spicy wings</p>
+                <span>₹240</span>
+                <button class="add-cart"    
+                    data-name="Chicken Wings"
+                    data-price="240">
+                    Add to Cart
+                </button>
+            </div>
+
+            <div class="card" data-category="starters">
+                <img src="D:\Project\Restaurant Menu Website\Images\veg cutlet.jpg" alt="Veg Cutlet">
+                <h3>Veg Cutlet</h3>
+                <p>Crispy vegetable patties</p>
+                <span>₹110</span>
+                <button class="add-cart"
+                    data-name="Veg Cutlet"
+                    data-price="110">
+                    Add to Cart
+                </button>
+            </div>
+
+            <div class="card" data-category="starters">
+                <img src="D:\Project\Restaurant Menu Website\Images\onion rings.jpg" alt="Onion Rings">
+                <h3>Onion Rings</h3>
+                <p>Crunchy onion rings</p>
+                <span>₹130</span>
+                <button class="add-cart"
+                    data-name="Onion Rings"
+                    data-price="130">
+                    Add to Cart
+                </button>
+            </div>
+        </div>    
+    </section>
+    <!-- MAINS -->
+    <section id="mains">
+        <h2 class="section-title">Main Course</h2>
+        <div class="menu-container">
+            <div class="card" data-category="mains">
+                <img src="D:\Project\Restaurant Menu Website\Images\cheese pizza.jpeg" alt="Cheese Pizza">
+                <h3>Cheese Pizza</h3>
+                <p>Loaded with mozzarella cheese</p>
+                <span>₹299</span>
+                <button class="add-cart"
+                    data-name="Cheese Pizza"
+                    data-price="299">
+                    Add to Cart
+                </button>
+            </div>
+
+            <div class="card" data-category="mains">
+                <img src="D:\Project\Restaurant Menu Website\Images\veg burger.jpeg" alt="Veg Burger">
+                <h3>Veg Burger</h3>
+                <p>Fresh veggie patty burger</p>
+                <span>₹199</span>
+                <button class="add-cart"
+                    data-name="Veg Burger"
+                    data-price="199">
+                    Add to Cart
+                </button>
+            </div>
+
+            <div class="card" data-category="mains">
+                <img src="D:\Project\Restaurant Menu Website\Images\chicken burger.jpeg" alt="Chicken Burger">
+                <h3>Chicken Burger</h3>
+                <p>Fresh chicken patty burger</p>
+                <span>₹225</span>
+                <button class="add-cart"
+                    data-name="Chicken Burger"
+                    data-price="225">
+                    Add to Cart
+                </button>
+            </div>
+
+            <div class="card" data-category="mains">
+                <img src="D:\Project\Restaurant Menu Website\Images\white sauce pasta.jpeg" alt="White Sauce Pasta">
+                <h3>White Sauce Pasta</h3>
+                <p>Creamy Italian pasta</p>
+                <span>₹250</span>
+                <button class="add-cart"
+                    data-name="White Sauce Pasta"
+                    data-price="250">
+                    Add to Cart
+                </button>
+            </div>
+
+            <div class="card" data-category="mains">
+                <img src="D:\Project\Restaurant Menu Website\Images\biryani.jpeg" alt="Biryani">
+                <h3>Biryani</h3>
+                <p>Flavorful aromatic rice</p>
+                <span>₹280</span>
+                <button class="add-cart"
+                    data-name="Biryani"
+                    data-price="280">
+                    Add to Cart
+                </button>
+            </div>
+
+            <div class="card" data-category="mains">
+                <img src="D:\Project\Restaurant Menu Website\Images\fried rice.jpeg" alt="Fried Rice">
+                <h3>Fried Rice</h3>
+                <p>Asian style rice dish</p>
+                <span>₹220</span>
+                <button class="add-cart"
+                    data-name="Fried Rice"
+                    data-price="220">
+                    Add to Cart
+                </button>
+            </div>
+
+            <div class="card" data-category="mains">
+                <img src="D:\Project\Restaurant Menu Website\Images\butter naan.jpeg" alt="Butter Naan">
+                <h3>Butter Naan</h3>
+                <p>Soft buttery naan</p>
+                <span>₹80</span>
+                <button class="add-cart"
+                    data-name="Butter Naan"
+                    data-price="80">
+                    Add to Cart
+                </button>
+            </div>
+
+            <div class="card" data-category="mains">
+                <img src="D:\Project\Restaurant Menu Website\Images\paneer butter masala.jpeg" alt="Paneer Butter Masala">
+                <h3>Paneer Butter Masala</h3>
+                <p>Rich creamy curry</p>
+                <span>₹260</span>
+                <button class="add-cart"
+                    data-name="Paneer Butter Masala"
+                    data-price="260">
+                    Add to Cart
+                </button>
+            </div>
+
+            <div class="card" data-category="mains">
+                <img src="D:\Project\Restaurant Menu Website\Images\mac and cheese.jpeg" alt="Mac and Cheese">
+                <h3>Mac And Cheese</h3>
+                <p>Macaroni covered in cheese sauce</p>
+                <span>₹320</span>
+                <button class="add-cart"
+                    data-name="Mac And Cheese"
+                    data-price="320">
+                    Add to Cart
+                </button>
+            </div>
+        </div>
+    </section>
+    <!-- DESSERTS -->
+    <section id="desserts">
+        <h2 class="section-title">Desserts</h2>
+        <div class="menu-container">
+            <div class="card" data-category="desserts">
+                <img src="D:\Project\Restaurant Menu Website\Images\chocolate cake.jpeg" alt="Chocolate Cake">
+                <h3>Chocolate Cake</h3>
+                <p>Rich chocolate goodness</p>
+                <span>₹150</span>
+                <button class="add-cart"
+                    data-name="Chocolate Cake"
+                    data-price="150">
+                    Add to Cart
+                </button>
+            </div>
+
+            <div class="card" data-category="desserts">
+                <img src="D:\Project\Restaurant Menu Website\Images\icecream.jpeg" alt="Ice Cream">
+                <h3>Ice Cream</h3>
+                <p>Vanilla delight</p>
+                <span>₹120</span>
+                <button class="add-cart"
+                    data-name="Ice Cream"
+                    data-price="120">
+                    Add to Cart
+                </button>
+            </div>
+
+            <div class="card" data-category="desserts">
+                <img src="D:\Project\Restaurant Menu Website\Images\brownie.jpeg" alt="Brownie">
+                <h3>Brownie</h3>
+                <p>Soft chocolate brownie</p>
+                <span>₹140</span>
+                <button class="add-cart"
+                    data-name="Brownie"
+                    data-price="140">
+                    Add to Cart
+                </button>
+            </div>
+
+            <div class="card" data-category="desserts">
+                <img src="D:\Project\Restaurant Menu Website\Images\cheesecake.jpeg" alt="Cheesecake">
+                <h3>Cheesecake</h3>
+                <p>Classic creamy dessert</p>
+                <span>₹180</span>
+                <button class="add-cart"
+                    data-name="Cheesecake"
+                    data-price="180">
+                    Add to Cart
+                </button>
+            </div>
+
+            <div class="card" data-category="desserts">
+                <img src="D:\Project\Restaurant Menu Website\Images\donut.jpeg" alt="Donut">
+                <h3>Donut</h3>
+                <p>Chocolate glazed donut</p>
+                <span>₹90</span>
+                <button class="add-cart"
+                    data-name="Donut"
+                    data-price="90">
+                    Add to Cart
+                </button>
+            </div>
+
+            <div class="card" data-category="desserts">
+                <img src="D:\Project\Restaurant Menu Website\Images\falooda.jpeg" alt="Falooda">
+                <h3>Falooda</h3>
+                <p>Mughlai cold dessert</p>
+                <span>₹220</span>
+                <button class="add-cart"
+                    data-name="Falooda"
+                    data-price="220">
+                    Add to Cart
+                </button>
+            </div>
+
+            <div class="card" data-category="desserts">
+                <img src="D:\Project\Restaurant Menu Website\Images\tiramisu.jpeg" alt="Tiramisu">
+                <h3>Tiramisu</h3>
+                <p>Italian coffee dessert</p>
+                <span>₹220</span>
+                <button class="add-cart"
+                    data-name="Tiramisu"
+                    data-price="220">
+                    Add to Cart
+                </button>
+            </div>
+
+            <div class="card" data-category="desserts">
+                <img src="D:\Project\Restaurant Menu Website\Images\gulab jamun.jpeg" alt="Gulab Jamun">
+                <h3>Gulab Jamun</h3>
+                <p>Sweet golden dumplings in warm syrup</p>
+                <span>₹170</span>
+                <button class="add-cart"
+                    data-name="Gulab Jamun"
+                    data-price="170">
+                    Add to Cart
+                </button>
+            </div>
+        </div>
+    </section>
+    <!-- DRINKS -->
+    <section id="drinks">
+        <h2 class="section-title">Drinks</h2>
+        <div class="menu-container">
+            <div class="card" data-category="drinks">
+                <img src="D:\Project\Restaurant Menu Website\Images\cold coffee.jpeg" alt="Cold Coffee">
+                <h3>Cold Coffee</h3>
+                <p>Refreshing coffee</p>
+                <span>₹130</span>
+                <button class="add-cart"
+                    data-name="Cold Coffee"
+                    data-price="130">
+                    Add to Cart
+                </button>
+            </div>
+
+            <div class="card" data-category="drinks">
+                <img src="D:\Project\Restaurant Menu Website\Images\fresh juice.jpeg" alt="Fresh Juice Shots">
+                <h3>Fresh Juice Shots</h3>
+                <p>Natural fruit juice</p>
+                <span>₹110</span>
+                <button class="add-cart"
+                    data-name="Fresh Juice Shots"
+                    data-price="110">
+                    Add to Cart
+                </button>
+            </div>
+
+            <div class="card" data-category="drinks">
+                <img src="D:\Project\Restaurant Menu Website\Images\lemon soda.jpeg" alt="Lemon Soda">
+                <h3>Lemon Soda</h3>
+                <p>Sweet & salty soda</p>
+                <span>₹90</span>
+                <button class="add-cart"
+                    data-name="Lemon Soda"
+                    data-price="90">
+                    Add to Cart
+                </button>
+            </div>
+
+            <div class="card" data-category="drinks">
+                <img src="D:\Project\Restaurant Menu Website\Images\milkshake.jpeg" alt="Milkshake">
+                <h3>Milkshake</h3>
+                <p>Chocolate milkshake</p>
+                <span>₹160</span>
+                <button class="add-cart"
+                    data-name="Milkshake"
+                    data-price="160">
+                    Add to Cart
+                </button>
+            </div>
+
+            <div class="card" data-category="drinks">
+                <img src="D:\Project\Restaurant Menu Website\Images\mojito.jpeg" alt="Mojito">
+                <h3>Mojito</h3>
+                <p>Minty refreshing drink</p>
+                <span>₹150</span>
+                <button class="add-cart"
+                    data-name="Mojito"
+                    data-price="150">
+                    Add to Cart
+                </button>
+            </div>
+
+            <div class="card" data-category="drinks">
+                <img src="D:\Project\Restaurant Menu Website\Images\green tea.jpeg" alt="Green Tea">
+                <h3>Green Tea</h3>
+                <p>Healthy beverage</p>
+                <span>₹80</span>
+                <button class="add-cart"
+                    data-name="Green Tea"
+                    data-price="80">
+                    Add to Cart
+                </button>
+            </div>
+
+            <div class="card" data-category="drinks">
+                <img src="D:\Project\Restaurant Menu Website\Images\hot chocolate.jpeg" alt="Hot Chocolate">
+                <h3>Hot Chocolate</h3>
+                <p>Rich chocolate drink</p>
+                <span>₹140</span>
+                <button class="add-cart"
+                    data-name="Hot Chocolate"
+                    data-price="140">
+                    Add to Cart
+                </button>
+            </div>
+
+            <div class="card" data-category="drinks">
+                <img src="D:\Project\Restaurant Menu Website\Images\iced tea.jpeg" alt="Iced Tea">
+                <h3>Iced Tea</h3>
+                <p>Refreshing chilled tea</p>
+                <span>₹100</span>
+                <button class="add-cart"
+                    data-name="Iced Tea"
+                    data-price="100">
+                    Add to Cart
+                </button>
+            </div>
+        </div>
+    </section>
+
+<footer id="footer">
+    <h3>Delicious Bites</h3>
+    <p>📍 Chennai, Tamil Nadu</p>
+    <p>📞 +91 9876543210</p>
+    <p>Open Daily: 10 AM - 11 PM</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
